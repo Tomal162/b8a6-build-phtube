@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@1.9.0/dist/full.css">
+    <title>Video Cards</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="bg-blue-500 p-4 flex justify-between items-center">
+        <div class="text-white">
+            <img src="./Logo.png" class="h-8 w-8 inline-block">
+        </div>
+		<button class="btn btn-primary" id="sortButton">Sort by View</button>
+        <button class="btn btn-primary">Blog</button>
+		<div id="message-container">
+			
+		</div>
+        <!-- Dynamic buttons for categories -->
+        <div id="categoryButtonsContainer" class="flex space-x-4">
+            <!-- Buttons will be added here dynamically using JavaScript -->
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="p-4">
+        <!-- Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="video-container">
+            <!-- Video cards will be added here -->
+        </div>
+        <!-- Cards will be added here dynamically using JavaScript -->
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
